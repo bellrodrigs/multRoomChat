@@ -1,6 +1,24 @@
 body {
     background-color: rgb(41, 41, 41);
-    background: url('../images/login-bg.jpg');
+    /*background: url('../images/login-bg.jpg');*/
+}
+
+.campo-mensagem{
+    background-color: rgb(41, 41, 41);
+}
+
+.btn-entrar{
+    background-color: #dd0064;
+    color: white;
+}
+.btn-entrar:hover{
+    color: white;
+    background-color: #c3065c;
+}
+
+.titulo{
+    color: white;
+    text-align: center;
 }
 
 .form-signin input[type="text"] {
@@ -79,22 +97,68 @@ img {
 	margin-top:-10px;
 }
 
-.dialogo{
+.dialogoRecebe{
 	width:100%;
 	height:auto;
 	margin-bottom:15px;
 	padding:10px;
-	background:#D8F0FE;
+	background:rgb(56, 56, 56);
 }
 
-.dialogo h4{
+.dialogoRecebe h4{
 	font-size:15px;
 	font-weight: bold;
-	color:#8B7777;
+	color:#fff;
 }
 
-.dialogo p{
+.dialogoRecebe p{
 	font-size:12px;
 	padding-left:15px;
-	color:#8B7777;
+	color:#fff;
+}
+
+.dialogoEnvia{
+	width:100%;
+	height:auto;
+	margin-bottom:15px;
+	padding:10px;
+    background:#5c5c5c;
+    ;
+}
+
+.dialogoEnvia h4{
+	font-size:15px;
+	font-weight: bold;
+	color:#eaeaea;
+}
+
+.dialogoEnvia p{
+	font-size:12px;
+	padding-left:15px;
+	color:#eaeaea;
+}
+
+.logado{
+	width:100%;
+	height:auto;
+	margin-bottom:15px;
+	padding:10px;
+    background:#d0cfcf;
+    ;
+}
+
+.logado h4{
+	font-size:15px;
+	font-weight: bold;
+	color:#474747;
+}
+
+.logado p{
+	font-size:12px;
+	padding-left:15px;
+	color:#474747;
+}
+
+.text-light{
+    color: white;
 }

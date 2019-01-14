@@ -12,7 +12,7 @@ module.exports.iniciaChat = function(application, req, res){
         return;
     }
         application.get('io').emit(
-            'msgCliente',
+            'msgClienteEntrou',
             {
                 apelido: dadosForm.apelido, 
                 mensagem:'  entrou no chat'
