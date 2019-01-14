@@ -3,7 +3,7 @@ var app = require('./config/server');
 
 //door listen
 var server = app.listen(80, function () {
-    console.log("Servidor ouvindo na porta 3000");
+    console.log("Servidor ouvindo na porta 80");
 });
 
 var io = require('socket.io').listen(server);
@@ -21,14 +21,14 @@ io.on('connection', function (socket) {
     socket.on('msgServidor', function (data) {
 
         socket.emit(
-            'msgCliente',
+            'msgClienteEnvia',
             {
                 apelido: data.apelido,
                 mensagem: data.mensagem
             }
         )
         socket.broadcast.emit(
-            'msgCliente',
+            'msgClienteRecebe',
             {
                 apelido: data.apelido,
                 mensagem: data.mensagem
